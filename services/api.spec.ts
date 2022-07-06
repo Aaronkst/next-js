@@ -1,7 +1,6 @@
 import { mockTest } from "./api";
 
-test("api", () => {
-  return mockTest().then((data) => {
-    expect(data).toBeTruthy();
-  });
+test("api", async () => {
+  const data = await mockTest();
+  expect(data).toBeTruthy();
 });
