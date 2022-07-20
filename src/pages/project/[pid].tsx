@@ -3,8 +3,8 @@ import { useRouter } from "next/router";
 
 const DyanmicPage: NextPage = () => {
   const router = useRouter();
-  const { id } = router.query;
-  return <p>Id: {id}</p>;
+  const { pid } = router.query;
+  return <p>Id: {pid}</p>;
 };
 
 export default DyanmicPage;
