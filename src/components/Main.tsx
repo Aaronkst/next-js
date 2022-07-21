@@ -3,13 +3,6 @@ import Image from "next/image";
 
 import imgMain from "../images/main.jpg";
 
-const navigation = [
-  { name: "Product", href: "#" },
-  { name: "Features", href: "#" },
-  { name: "Marketplace", href: "#" },
-  { name: "Company", href: "#" },
-];
-
 export default function Main() {
   return (
     <div id="main" className="relative bg-white overflow-hidden">
@@ -37,10 +30,24 @@ export default function Main() {
                 </span>
               </h1>
               <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
-                Hi, I&#39;m Aaron, basically I&#39;m a fullstack developer
-                versed in Node JS and Javascript. You can read about more
-                details below but if you already know me, we can cut to the
-                chase and start working together!
+                Hi! I&#39;m Aaron. I&#39;m a fullstack developer using{" "}
+                <a
+                  href="https://nodejs.org/"
+                  className="text-indigo-600 underline"
+                  target="blank"
+                >
+                  Node JS
+                </a>{" "}
+                and{" "}
+                <a
+                  href="https://www.typescriptlang.org/"
+                  className="text-indigo-600 underline"
+                  target="blank"
+                >
+                  Typescript
+                </a>
+                . You can read about more details below but if you already know
+                me, we can cut to the chase and start working together!
               </p>
               <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                 <div className="rounded-md shadow">

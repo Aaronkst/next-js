@@ -3,20 +3,58 @@ import NavigationBar from "../components/Navigation";
 import Main from "../components/Main";
 import Card from "../components/Card";
 
-const skillsets = ["1", "2", "3", "4", "5", "6", "7", "8"];
+const skillsets = [
+  {
+    skill: {
+      name: "skill 1",
+      description:
+        "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum",
+    },
+    image: "link to image",
+  },
+  {
+    skill: {
+      name: "skill 1",
+      description:
+        "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum",
+    },
+    image: "link to image",
+  },
+  {
+    skill: {
+      name: "skill 1",
+      description:
+        "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum",
+    },
+    image: "link to image",
+  },
+  {
+    skill: {
+      name: "skill 1",
+      description: "lorem ipsum lorem ipsum lorem ipsum lorem ipsum",
+    },
+    image: "link to image",
+  },
+  {
+    skill: { name: "skill 1", description: "lorem ipsum" },
+    image: "link to image",
+  },
+];
 
 const Home: NextPage = () => {
   return (
     <>
       <NavigationBar />
       <Main />
-      {skillsets.map((skill, index) => {
-        return (
-          <div className="mt-5" key={index}>
-            <Card skill={skill} />
-          </div>
-        );
-      })}
+      <div className="grid md:grid-cols-3 sm:grid-cols-none gap-4 my-9 mx-3">
+        {skillsets.map((skill, index) => {
+          return (
+            <div key={index} className="w-100">
+              <Card skill={skill.skill} image={skill.image} />
+            </div>
+          );
+        })}
+      </div>
     </>
   );
 };
