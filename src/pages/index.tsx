@@ -47,10 +47,10 @@ const Home: NextPage = () => {
       <NavigationBar />
       <Main />
       <div className="grid md:grid-cols-3 sm:grid-cols-none gap-4 my-9 mx-3">
-        {skillsets.map((skill, index) => {
+        {skillsets.map((skillset, index) => {
           return (
             <div key={index} className="w-100">
-              <Card skill={skill.skill} image={skill.image} />
+              <Card skill={skillset.skill} image={skillset.image} />
             </div>
           );
         })}
