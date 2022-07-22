@@ -7,7 +7,7 @@ import imgCoding from "../images/coding.png";
 
 const navigation = [
   { name: "Home", href: "#main", current: true },
-  { name: "Skillset", href: "#", current: false },
+  { name: "Skillset", href: "#skillset", current: false },
   { name: "Projects", href: "#", current: false },
 ];
 
