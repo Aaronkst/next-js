@@ -17,7 +17,10 @@ function classNames(...classes: Array<string>) {
 
 const Navigation = (): JSX.Element => {
   return (
-    <Disclosure as="nav" className="bg-gray-800">
+    <Disclosure
+      as="nav"
+      className="bg-gray-800 w-full sticky top-0 z-50 md:absolute"
+    >
       {({ open }) => (
         <>
           <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">

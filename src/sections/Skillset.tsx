@@ -6,43 +6,45 @@ import imgCoding from "../images/coding.png";
 const skillsets = [
   {
     skill: {
-      name: "skill 1",
+      name: "Skill 1",
       description:
-        "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum",
+        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum maxime voluptas ipsam aliquam itaque cupiditate provident architecto expedita harum culpa odit, inventore rem molestias laborum repudiandae corporis pariatur quo eius iste! Quaerat, assumenda voluptates! Molestias, recusandae? Maxime fuga omnis ducimus.",
       level: 9,
     },
     image: imgCoding,
   },
   {
     skill: {
-      name: "skill 1",
+      name: "Skill 1",
       description:
-        "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum",
+        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum maxime voluptas ipsam aliquam itaque cupiditate provident architecto expedita harum culpa odit, inventore rem molestias laborum repudiandae corporis pariatur quo eius iste! Quaerat, assumenda voluptates! Molestias, recusandae? Maxime fuga omnis ducimus.",
       level: 9,
     },
     image: imgCoding,
   },
   {
     skill: {
-      name: "skill 1",
+      name: "Skill 1",
       description:
-        "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum",
+        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum maxime voluptas ipsam aliquam itaque cupiditate provident architecto expedita harum culpa odit, inventore rem molestias laborum repudiandae corporis pariatur quo eius iste! Quaerat, assumenda voluptates! Molestias, recusandae? Maxime fuga omnis ducimus.",
       level: 9,
     },
     image: imgCoding,
   },
   {
     skill: {
-      name: "skill 1",
-      description: "lorem ipsum lorem ipsum lorem ipsum lorem ipsum",
+      name: "Skill 1",
+      description:
+        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum maxime voluptas ipsam aliquam itaque cupiditate provident architecto expedita harum culpa odit, inventore rem molestias laborum repudiandae corporis pariatur quo eius iste! Quaerat, assumenda voluptates! Molestias, recusandae? Maxime fuga omnis ducimus.",
       level: 9,
     },
     image: imgCoding,
   },
   {
     skill: {
-      name: "skill 1",
-      description: "lorem ipsum lorem ipsum",
+      name: "Skill 1",
+      description:
+        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum maxime voluptas ipsam aliquam itaque cupiditate provident architecto expedita harum culpa odit, inventore rem molestias laborum repudiandae corporis pariatur quo eius iste! Quaerat, assumenda voluptates! Molestias, recusandae? Maxime fuga omnis ducimus.",
       level: 2,
     },
     image: imgCoding,
@@ -51,7 +53,7 @@ const skillsets = [
 
 const Skillset = (): JSX.Element => {
   return (
-    <div id="skillset">
+    <div id="skillset" className="z-40">
       <SectionHeader title="Skillset" />
       <div className="grid md:grid-cols-3 sm:grid-cols-none gap-4 my-9 mx-4">
         {skillsets.map((skillset, index) => {

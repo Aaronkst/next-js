@@ -5,7 +5,7 @@ import imgMain from "../images/main.jpg";
 
 const Main = (): JSX.Element => {
   return (
-    <div id="main" className="relative bg-white overflow-hidden">
+    <div id="main" className="relative bg-white overflow-hidden z-40">
       <div className="max-w-7xl mx-auto">
         <div className="relative z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
           <svg
@@ -60,7 +60,7 @@ const Main = (): JSX.Element => {
                 </div>
                 <div className="mt-3 sm:mt-0 sm:ml-3">
                   <a
-                    href="#"
+                    href="#skillset"
                     className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-indigo-700 bg-indigo-100 hover:bg-indigo-200 md:py-4 md:text-lg md:px-10"
                   >
                     More About Me &darr;
