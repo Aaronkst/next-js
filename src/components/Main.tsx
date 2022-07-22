@@ -3,7 +3,7 @@ import Image from "next/image";
 
 import imgMain from "../images/main.jpg";
 
-export default function Main() {
+const Main = (): JSX.Element => {
   return (
     <div id="main" className="relative bg-white overflow-hidden">
       <div className="max-w-7xl mx-auto">
@@ -81,4 +81,6 @@ export default function Main() {
       </div>
     </div>
   );
-}
+};
+
+export default Main;

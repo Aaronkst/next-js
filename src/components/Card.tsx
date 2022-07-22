@@ -1,6 +1,6 @@
 import Image, { StaticImageData } from "next/image";
 
-type Card = {
+type ICard = {
   skill: {
     name: string;
     description: string;
@@ -8,7 +8,7 @@ type Card = {
   image: string | StaticImageData;
 };
 
-export default function Card({ skill, image }: Card) {
+const Card = ({ skill, image }: ICard): JSX.Element => {
   return (
     <div className="flex justify-center">
       <div className="flex flex-col md:flex-row w-full rounded-lg bg-white shadow-lg">
@@ -27,4 +27,6 @@ export default function Card({ skill, image }: Card) {
       </div>
     </div>
   );
-}
+};
+
+export default Card;

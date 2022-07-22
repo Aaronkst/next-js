@@ -15,7 +15,7 @@ function classNames(...classes: Array<string>) {
   return classes.filter(Boolean).join(" ");
 }
 
-export default function NavigationBar() {
+const Navigation = (): JSX.Element => {
   return (
     <Disclosure as="nav" className="bg-gray-800">
       {({ open }) => (
@@ -90,4 +90,6 @@ export default function NavigationBar() {
       )}
     </Disclosure>
   );
-}
+};
+
+export default Navigation;
