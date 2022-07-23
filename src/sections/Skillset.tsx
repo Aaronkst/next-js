@@ -1,77 +1,79 @@
 import { SkillCard } from "../components/Card";
 import { SectionHeader } from "../components/Typography";
 
-import imgCoding from "../images/coding.png";
+import imgDb from "../images/skills/db.png";
+import imgDocker from "../images/skills/docker.png";
+import imgGit from "../images/skills/git.png";
+import imgNodeJs from "../images/skills/nodejs.png";
+import imgPhp from "../images/skills/php.png";
+import imgReact from "../images/skills/react.png";
+import imgTest from "../images/skills/test.png";
+import imgThreeJs from "../images/skills/threejs.png";
+import imgUiux from "../images/skills/uiux.png";
 
 const skillsets = [
   {
     skill: {
-      name: "Backend",
-      description: [
-        {
-          title: "Frameworks",
-          text: "Nest JS, Express JS, Fastify JS, Sails JS, Node-red",
-        },
-        {
-          title: "Tools & Utilities",
-          text: "PM2, Docker, ORM, Jest, Redis, Swagger UI",
-        },
-      ],
+      name: "Node JS",
       level: 9,
     },
-    image: imgCoding,
+    image: imgNodeJs,
   },
   {
     skill: {
-      name: "Frontend",
-      description: [
-        {
-          title: "Frameworks",
-          text: "Next JS, React JS, Three JS, JQuery",
-        },
-        {
-          title: "Tools & Utilities",
-          text: "Material UI, Tailwind CSS, Bootstrap, Figma Prototyping",
-        },
-      ],
-
-      level: 8,
-    },
-    image: imgCoding,
-  },
-  {
-    skill: {
-      name: "API & Server Security",
-      description: [
-        {
-          title: "Methods",
-          text: "JWT Authentication, CORS, Helmet, Password Encryption, Payload Validation, Data Models",
-        },
-        {
-          title: "Tools & Utilities",
-          text: "Material UI, Tailwind CSS, Bootstrap, Figma Prototyping",
-        },
-      ],
-      level: 8,
-    },
-    image: imgCoding,
-  },
-  {
-    skill: {
-      name: "Database",
-      description: [
-        {
-          title: "Types & Brands",
-          text: "Mongodb, Firebase Firestore, Postgres SQL, MySQL",
-        },
-        {
-          title: "Tools & Utilities",
-          text: "TypeORM, Data Serialization, Document Models & Methods",
-        },
-      ],
+      name: "React JS",
       level: 9,
     },
-    image: imgCoding,
+    image: imgReact,
+  },
+  {
+    skill: {
+      name: "Three JS",
+      level: 7,
+    },
+    image: imgThreeJs,
+  },
+  {
+    skill: {
+      name: "Testing",
+      level: 8,
+    },
+    image: imgTest,
+  },
+  {
+    skill: {
+      name: "Database ( Relational and No-SQL )",
+      level: 8,
+    },
+    image: imgDb,
+  },
+  {
+    skill: {
+      name: "Version Control (Git)",
+      level: 9,
+    },
+    image: imgGit,
+  },
+  {
+    skill: {
+      name: "UI/UX",
+      level: 6,
+    },
+    image: imgUiux,
+  },
+  {
+    skill: {
+      name: "DevOps ( Containerization & Security )",
+      level: 6,
+    },
+    image: imgDocker,
+  },
+  {
+    skill: {
+      name: "PHP",
+      level: 6,
+    },
+    image: imgPhp,
   },
 ];
 

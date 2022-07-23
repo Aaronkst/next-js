@@ -1,4 +1,3 @@
-import Carousel from "../components/Carousel";
 import { SectionHeader } from "../components/Typography";
 
 const projects = ["a", "b", "c"];
