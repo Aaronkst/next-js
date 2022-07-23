@@ -8,10 +8,10 @@ function MyApp({ Component, pageProps }: AppProps) {
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
-      if (window.pageYOffset > 300 && !showButton) {
+      if (window.pageYOffset > 300) {
         setShowButton(true);
       } else {
-        if (showButton) setShowButton(false);
+        setShowButton(false);
       }
     });
   }, []);

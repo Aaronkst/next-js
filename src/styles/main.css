@@ -734,8 +734,12 @@ video {
   display: none;
 }
 
-.h-4 {
-  height: 1rem;
+.h-7 {
+  height: 1.75rem;
+}
+
+.h-80 {
+  height: 20rem;
 }
 
 .h-2 {
@@ -770,8 +774,12 @@ video {
   height: 1.5rem;
 }
 
-.w-4 {
-  width: 1rem;
+.h-4 {
+  height: 1rem;
+}
+
+.w-7 {
+  width: 1.75rem;
 }
 
 .w-full {
@@ -800,6 +808,10 @@ video {
 
 .w-48 {
   width: 12rem;
+}
+
+.w-4 {
+  width: 1rem;
 }
 
 .max-w-7xl {
@@ -947,9 +959,9 @@ video {
   border-color: transparent;
 }
 
-.bg-gray-600 {
+.bg-pink-600 {
   --tw-bg-opacity: 1;
-  background-color: rgb(75 85 99 / var(--tw-bg-opacity));
+  background-color: rgb(219 39 119 / var(--tw-bg-opacity));
 }
 
 .bg-white {
@@ -1119,16 +1131,16 @@ video {
   font-weight: 500;
 }
 
+.font-bold {
+  font-weight: 700;
+}
+
 .font-semibold {
   font-weight: 600;
 }
 
 .font-extrabold {
   font-weight: 800;
-}
-
-.font-bold {
-  font-weight: 700;
 }
 
 .uppercase {
@@ -1158,6 +1170,11 @@ video {
   color: rgb(55 65 81 / var(--tw-text-opacity));
 }
 
+.text-indigo-600 {
+  --tw-text-opacity: 1;
+  color: rgb(79 70 229 / var(--tw-text-opacity));
+}
+
 .text-gray-600 {
   --tw-text-opacity: 1;
   color: rgb(75 85 99 / var(--tw-text-opacity));
@@ -1171,11 +1188,6 @@ video {
 .text-gray-300 {
   --tw-text-opacity: 1;
   color: rgb(209 213 219 / var(--tw-text-opacity));
-}
-
-.text-indigo-600 {
-  --tw-text-opacity: 1;
-  color: rgb(79 70 229 / var(--tw-text-opacity));
 }
 
 .text-gray-500 {
@@ -1276,14 +1288,19 @@ a {
           backdrop-filter: blur(30px);
 }
 
-.hover\:bg-gray-700:hover {
+.hover\:bg-pink-700:hover {
   --tw-bg-opacity: 1;
-  background-color: rgb(55 65 81 / var(--tw-bg-opacity));
+  background-color: rgb(190 24 93 / var(--tw-bg-opacity));
 }
 
 .hover\:bg-white:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-gray-700:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(55 65 81 / var(--tw-bg-opacity));
 }
 
 .hover\:bg-indigo-700:hover {
@@ -1317,9 +1334,9 @@ a {
   outline-offset: 2px;
 }
 
-.focus\:bg-gray-700:focus {
+.focus\:bg-pink-700:focus {
   --tw-bg-opacity: 1;
-  background-color: rgb(55 65 81 / var(--tw-bg-opacity));
+  background-color: rgb(190 24 93 / var(--tw-bg-opacity));
 }
 
 .focus\:no-underline:focus {
@@ -1359,9 +1376,9 @@ a {
   --tw-ring-color: rgb(255 255 255 / var(--tw-ring-opacity));
 }
 
-.active\:bg-gray-800:active {
+.active\:bg-pink-800:active {
   --tw-bg-opacity: 1;
-  background-color: rgb(31 41 55 / var(--tw-bg-opacity));
+  background-color: rgb(157 23 77 / var(--tw-bg-opacity));
 }
 
 .active\:shadow-lg:active {

@@ -6,46 +6,70 @@ import imgCoding from "../images/coding.png";
 const skillsets = [
   {
     skill: {
-      name: "Skill 1",
-      description:
-        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum maxime voluptas ipsam aliquam itaque cupiditate provident architecto expedita harum culpa odit, inventore rem molestias laborum repudiandae corporis pariatur quo eius iste! Quaerat, assumenda voluptates! Molestias, recusandae? Maxime fuga omnis ducimus.",
+      name: "Backend",
+      description: [
+        {
+          title: "Frameworks",
+          text: "Nest JS, Express JS, Fastify JS, Sails JS, Node-red",
+        },
+        {
+          title: "Tools & Utilities",
+          text: "PM2, Docker, ORM, Jest, Redis, Swagger UI",
+        },
+      ],
       level: 9,
     },
     image: imgCoding,
   },
   {
     skill: {
-      name: "Skill 1",
-      description:
-        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum maxime voluptas ipsam aliquam itaque cupiditate provident architecto expedita harum culpa odit, inventore rem molestias laborum repudiandae corporis pariatur quo eius iste! Quaerat, assumenda voluptates! Molestias, recusandae? Maxime fuga omnis ducimus.",
-      level: 9,
+      name: "Frontend",
+      description: [
+        {
+          title: "Frameworks",
+          text: "Next JS, React JS, Three JS, JQuery",
+        },
+        {
+          title: "Tools & Utilities",
+          text: "Material UI, Tailwind CSS, Bootstrap, Figma Prototyping",
+        },
+      ],
+
+      level: 8,
     },
     image: imgCoding,
   },
   {
     skill: {
-      name: "Skill 1",
-      description:
-        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum maxime voluptas ipsam aliquam itaque cupiditate provident architecto expedita harum culpa odit, inventore rem molestias laborum repudiandae corporis pariatur quo eius iste! Quaerat, assumenda voluptates! Molestias, recusandae? Maxime fuga omnis ducimus.",
-      level: 9,
+      name: "API & Server Security",
+      description: [
+        {
+          title: "Methods",
+          text: "JWT Authentication, CORS, Helmet, Password Encryption, Payload Validation, Data Models",
+        },
+        {
+          title: "Tools & Utilities",
+          text: "Material UI, Tailwind CSS, Bootstrap, Figma Prototyping",
+        },
+      ],
+      level: 8,
     },
     image: imgCoding,
   },
   {
     skill: {
-      name: "Skill 1",
-      description:
-        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum maxime voluptas ipsam aliquam itaque cupiditate provident architecto expedita harum culpa odit, inventore rem molestias laborum repudiandae corporis pariatur quo eius iste! Quaerat, assumenda voluptates! Molestias, recusandae? Maxime fuga omnis ducimus.",
+      name: "Database",
+      description: [
+        {
+          title: "Types & Brands",
+          text: "Mongodb, Firebase Firestore, Postgres SQL, MySQL",
+        },
+        {
+          title: "Tools & Utilities",
+          text: "TypeORM, Data Serialization, Document Models & Methods",
+        },
+      ],
       level: 9,
-    },
-    image: imgCoding,
-  },
-  {
-    skill: {
-      name: "Skill 1",
-      description:
-        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum maxime voluptas ipsam aliquam itaque cupiditate provident architecto expedita harum culpa odit, inventore rem molestias laborum repudiandae corporis pariatur quo eius iste! Quaerat, assumenda voluptates! Molestias, recusandae? Maxime fuga omnis ducimus.",
-      level: 2,
     },
     image: imgCoding,
   },
