@@ -10,6 +10,7 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   background-image: linear-gradient(#FFFFFF, #EAEAEA);
   background-attachment: fixed;
+  scroll-behavior: smooth;
 }
 
 a {
