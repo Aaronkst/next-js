@@ -23,7 +23,7 @@ const projects = [
 ];
 
 const Projects = (): JSX.Element => {
-  const carouselContents = projects.map((project: IProject, index: number) => {
+  const projectList = projects.map((project: IProject, index: number) => {
     return (
       <section className="mb-32 mx-0 md:mx-5 text-gray-800" key={index}>
         <div className="block rounded-lg shadow-lg bg-white">
@@ -74,10 +74,9 @@ const Projects = (): JSX.Element => {
   });
 
   return (
-    <div id="projects" className="z-40 py-9 px-4 md:px-12 bg-indigo-600">
+    <div id="projects" className="z-40 py-9 px-4 md:px-12 bg-gray-800">
       <SectionHeader title="Projects" white />
-      {carouselContents}
-      {/*<Carousel content={carouselContents} length={carouselContents.length} />*/}
+      {projectList}
     </div>
   );
 };

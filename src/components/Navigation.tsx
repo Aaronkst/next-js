@@ -8,7 +8,7 @@ import imgCoding from "../images/coding.png";
 const navigation = [
   { name: "Home", href: "#main", current: true },
   { name: "Skillset", href: "#skillset", current: false },
-  { name: "Projects", href: "#", current: false },
+  { name: "Projects", href: "#projects", current: false },
 ];
 
 function classNames(...classes: Array<string>) {
