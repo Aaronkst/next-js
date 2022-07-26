@@ -1,3 +1,5 @@
+import { StaticImageData } from "next/image";
+
 import { SkillCard } from "../components/Card";
 import { SectionHeader } from "../components/Typography";
 
@@ -10,6 +12,14 @@ import imgReact from "../images/skills/react.png";
 import imgTest from "../images/skills/test.png";
 import imgThreeJs from "../images/skills/threejs.png";
 import imgUiux from "../images/skills/uiux.png";
+
+type ISkillset = {
+  skill: {
+    name: string;
+    level: number;
+  };
+  image: StaticImageData;
+};
 
 const skillsets = [
   {
@@ -82,7 +92,7 @@ const Skillset = (): JSX.Element => {
     <div id="skillset" className="z-40">
       <SectionHeader title="Skillset" />
       <div className="grid md:grid-cols-3 sm:grid-cols-none gap-4 my-9 mx-4">
-        {skillsets.map((skillset, index) => {
+        {skillsets.map((skillset: ISkillset, index: number) => {
           return (
             <div key={index} className="w-100">
               <SkillCard skill={skillset.skill} image={skillset.image} />

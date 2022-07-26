@@ -5,7 +5,7 @@ type ISkillCard = {
     name: string;
     level: number;
   };
-  image: string | StaticImageData;
+  image: StaticImageData;
 };
 
 const SkillCard = ({ skill, image }: ISkillCard): JSX.Element => {
