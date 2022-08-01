@@ -4,12 +4,20 @@ import { Status } from "../../constants";
 
 type IData = {
   status: Status.success;
-  data: string;
+  data: any;
 };
 
 export default function handler(
   req: NextApiRequest,
   res: NextApiResponse<IData>
 ) {
-  return res.status(200).json({ status: Status.success, data: "Hello World" });
+  return res.status(200).json({
+    status: Status.success,
+    data: {
+      endpoints: [
+        { url: "/private", method: "POST", authorization: true },
+        { url: "/public", method: "POST", authorization: false },
+      ],
+    },
+  });
 }
