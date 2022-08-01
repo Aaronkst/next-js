@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import "../styles/main.css";
 import type { AppProps } from "next/app";
 import BackToTop from "../components/BackToTop";
+import Head from "next/head";
 
 function MyApp({ Component, pageProps }: AppProps) {
   const [showButton, setShowButton] = useState(false);
@@ -18,6 +19,9 @@ function MyApp({ Component, pageProps }: AppProps) {
 
   return (
     <>
+      <Head>
+        <title>Khant Si Thu | Portfolio</title>
+      </Head>
       <Component {...pageProps} />
       <BackToTop showButton={showButton} />
     </>
