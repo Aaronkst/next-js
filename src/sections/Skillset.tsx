@@ -1,3 +1,5 @@
+import { forwardRef } from "react";
+
 import { StaticImageData } from "next/image";
 
 import { SkillCard } from "../components/Card";
@@ -87,9 +89,9 @@ const skillsets = [
   },
 ];
 
-const Skillset = (): JSX.Element => {
+const Skillset = forwardRef<HTMLDivElement>((props, ref): JSX.Element => {
   return (
-    <div id="skillset" className="z-40">
+    <div ref={ref} id="skillset" className="z-40">
       <SectionHeader title="Skillset" />
       <div className="grid md:grid-cols-3 sm:grid-cols-none gap-4 my-9 mx-4">
         {skillsets.map((skillset: ISkillset, index: number) => {
@@ -102,6 +104,8 @@ const Skillset = (): JSX.Element => {
       </div>
     </div>
   );
-};
+});
+
+Skillset.displayName = "Skillset";
 
 export default Skillset;
