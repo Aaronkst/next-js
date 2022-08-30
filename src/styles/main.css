@@ -1461,8 +1461,16 @@ a {
     flex-direction: row;
   }
 
+  .lg\:items-center {
+    align-items: center;
+  }
+
   .lg\:justify-start {
     justify-content: flex-start;
+  }
+
+  .lg\:justify-center {
+    justify-content: center;
   }
 
   .lg\:rounded-none {
@@ -1471,14 +1479,6 @@ a {
 
   .lg\:rounded-l-lg {
     border-top-left-radius: 0.5rem;
-    border-bottom-left-radius: 0.5rem;
-  }
-
-  .lg\:rounded-tr-none {
-    border-top-right-radius: 0px;
-  }
-
-  .lg\:rounded-bl-lg {
     border-bottom-left-radius: 0.5rem;
   }
 

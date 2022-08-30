@@ -2,6 +2,7 @@ import Image, { StaticImageData } from "next/image";
 import { SectionHeader } from "../components/Typography";
 
 import imgAddTech from "../images/projects/addtech.png";
+import imgNpm from "../images/projects/npm.png";
 
 type IProject = {
   name: string;
@@ -20,6 +21,13 @@ const projects = [
     href: "https://addtech.site",
     image: imgAddTech,
   },
+  {
+    name: "NPM Package | Local Caching",
+    description: "A simple local caching system.",
+    techstack: "Typescript",
+    href: "https://www.npmjs.com/package/@aaron_kst/local-cache",
+    image: imgNpm,
+  },
 ];
 
 const Projects = (): JSX.Element => {
@@ -28,12 +36,8 @@ const Projects = (): JSX.Element => {
       <section className="mb-32 mx-0 md:mx-5 text-gray-800" key={index}>
         <div className="block rounded-lg shadow-lg bg-white">
           <div className="flex flex-wrap items-center">
-            <div className="hidden lg:flex grow-0 shrink-0 basis-auto lg:w-3/12">
-              <Image
-                src={project.image}
-                alt="Trendy Pants and Shoes"
-                className="w-full rounded-t-lg lg:rounded-tr-none lg:rounded-bl-lg"
-              />
+            <div className="hidden lg:flex lg:items-center lg:justify-center grow-0 shrink-0 basis-auto lg:w-3/12">
+              <Image src={project.image} alt="Trendy Pants and Shoes" />
             </div>
             <div className="grow-0 shrink-0 basis-auto w-full lg:w-9/12">
               <div className="px-6 py-12 md:px-12">
