@@ -26,3 +26,82 @@ a {
   background: hsla(0, 0%, 100%, 0.55); 
   backdrop-filter: blur(30px);
 }
+
+.fly-in-top {
+  animation: fly-in-top 0.5s;
+}
+
+.fly-in-bottom {
+  animation: fly-in-bottom 0.5s;
+}
+
+.fly-in-left {
+  animation: fly-in-left 0.5s;
+}
+
+.fly-in-right {
+  animation: fly-in-right 0.5s;
+}
+
+@keyframes fly-in-bottom {
+  0%   { 
+  transform: translateY(300%); 		
+  }
+  100% { 
+  transform: translateY(0%); 
+  }
+}
+
+@keyframes fly-in-left {
+  0%   { 
+  transform: translateX(-300%); 		
+  }
+  100% { 
+  transform: translateX(0%); 
+  }
+}
+
+@keyframes fly-in-right {
+  0%   { 
+  transform: translateX(300%); 		
+  }
+  100% { 
+  transform: translateX(0%); 
+  }
+}
+
+@keyframes fly-out-top {
+  0%   { 
+  transform: translateY(0%); 		
+  }
+  100% { 
+  transform: translateY(-300%); 
+  }
+}
+
+@keyframes fly-out-bottom {
+  0%   { 
+  transform: translateY(0%); 		
+  }
+  100% { 
+  transform: translateY(300%); 
+  }
+}
+
+@keyframes fly-out-left {
+  0%   { 
+  transform: translateX(0%); 		
+  }
+  100% { 
+  transform: translateX(-300%); 
+  }
+}
+
+@keyframes fly-out-right {
+  0%   { 
+  transform: translateX(0%); 		
+  }
+  100% { 
+  transform: translateX(300%); 
+  }
+}

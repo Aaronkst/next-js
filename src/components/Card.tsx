@@ -11,8 +11,8 @@ type ISkillCard = {
 const SkillCard = ({ skill, image }: ISkillCard): JSX.Element => {
   return (
     <div className="flex justify-center">
-      <div className="flex flex-col lg:flex-row w-full rounded-lg bg-white shadow-lg">
-        <div className="hidden lg:block flex-none">
+      <div className="flex items-center w-full rounded-lg bg-white shadow-lg">
+        <div>
           <Image
             className="rounded-t-lg lg:rounded-none lg:rounded-l-lg"
             src={image}
