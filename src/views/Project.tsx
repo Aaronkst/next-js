@@ -9,7 +9,6 @@ import ScrollAnimation from "react-animate-on-scroll";
 type IProject = {
   name: string;
   description: string;
-  techstack: string;
   href: string;
   image: StaticImageData;
 };
@@ -19,14 +18,12 @@ const projects = [
     name: "addTech | Digital Solutions",
     description:
       "A start up business that provides various digital marketing solutions, software solutions and graphical solutions.",
-    techstack: "React JS, Fastify JS (Node), AWS",
     href: "https://addtech.site",
     image: imgAddTech,
   },
   {
     name: "NPM Package | Local Caching",
     description: "A simple local caching system.",
-    techstack: "Typescript",
     href: "https://www.npmjs.com/package/@aaron_kst/local-cache",
     image: imgNpm,
   },
@@ -48,30 +45,28 @@ const Projects = (): JSX.Element => {
               : "bg-white md:bg-transparent border-b-4 border-indigo-700 mt-8 mx-2 md:flex md:border-none rounded-lg drop-shadow-lg md:drop-shadow-none"
           }
         >
-          <div className="flex md:w-1/3 md:drop-shadow-lg">
-            <div className="w-full">
-              <Image
-                priority
-                src={project.image}
-                alt="Image Description"
-                layout="responsive"
-                className="rounded-t-lg md:rounded-lg"
-                onContextMenu={(e) => {
-                  e.preventDefault();
-                  return false;
-                }}
-              />
-            </div>
+          <div className="md:w-1/3 md:drop-shadow-lg">
+            <Image
+              priority
+              src={project.image}
+              alt="Image Description"
+              layout="responsive"
+              className="rounded-t-lg md:rounded-lg"
+              onContextMenu={(e) => {
+                e.preventDefault();
+                return false;
+              }}
+            />
           </div>
           <div className="md:w-2/3 flex items-center">
             <div
               className={
                 index % 2 === 0
-                  ? "text-xl p-3 md:p-5 my-5 md:my-0 border-b-1 border-indigo-700 md:border-l-4 md:border-b-0 w-full"
-                  : "text-xl p-3 md:p-5 my-5 md:my-0 border-b-1 border-indigo-700 md:border-r-4 md:border-b-0 w-full"
+                  ? "p-3 md:p-5 my-5 md:my-0 border-b-1 border-indigo-700 md:border-b-0 w-full"
+                  : "p-3 md:p-5 my-5 md:my-0 border-b-1 border-indigo-700 md:border-b-0 w-full"
               }
             >
-              <h2 className="text-2xl font-bold mb-4">{project.name}</h2>
+              <h2 className="text-xl font-bold mb-4">{project.name}</h2>
               <p className="uppercase text-pink-600 font-bold mb-6 flex items-center">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -96,9 +91,6 @@ const Projects = (): JSX.Element => {
                 </a>
               </p>
               <p className="text-gray-500 mb-6">{project.description}</p>
-              <p className="text-gray-500 mb-6">
-                Tech Stack: <b>{project.techstack}</b>
-              </p>
             </div>
           </div>
         </div>
@@ -107,10 +99,12 @@ const Projects = (): JSX.Element => {
   });
 
   return (
-    <div id="projects" className="z-40 py-9 px-4 md:px-12 bg-white">
-      <SectionHeader title="Projects" />
-      <div className="flex flex-col py-10 items-center lg:w-8/12 lg:px-5 mx-auto">
-        {projectList}
+    <div id="projects" className="z-40 py-9 md:px-12 bg-gray-800">
+      <div className="lg:w-8/12 py-9 lg:-mt-48 mx-auto bg-white rounded-xl shadow-lg">
+        <SectionHeader title="Projects" />
+        <div className="flex flex-col pb-10 items-center lg:px-5">
+          {projectList}
+        </div>
       </div>
     </div>
   );

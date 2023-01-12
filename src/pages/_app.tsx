@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import "../styles/main.css";
+import "../styles/globals.css";
 import type { AppProps } from "next/app";
 import BackToTop from "../components/BackToTop";
 import Head from "next/head";

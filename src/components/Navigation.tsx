@@ -6,7 +6,7 @@ import Image from "next/image";
 import imgCoding from "../images/coding.png";
 
 const navigation = [
-  { name: "Home", href: "#main", current: true },
+  { name: "Home", href: "#main", current: false },
   { name: "Skillset", href: "#skillset", current: false },
   { name: "Projects", href: "#projects", current: false },
 ];

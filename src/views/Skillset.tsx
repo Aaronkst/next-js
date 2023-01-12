@@ -54,7 +54,7 @@ const skillsets = [
   },
   {
     skill: {
-      name: "Database ( Relational and No-SQL )",
+      name: "Database",
       level: 8,
     },
     image: imgDb,
@@ -73,13 +73,13 @@ const skillsets = [
     },
     image: imgUiux,
   },
-  {
-    skill: {
-      name: "DevOps ( Containerization & Security )",
-      level: 6,
-    },
-    image: imgDocker,
-  },
+  // {
+  //   skill: {
+  //     name: "DevOps ( Containerization & Security )",
+  //     level: 6,
+  //   },
+  //   image: imgDocker,
+  // },
   {
     skill: {
       name: "PHP",
@@ -91,12 +91,12 @@ const skillsets = [
 
 const Skillset = forwardRef<HTMLDivElement>((props, ref): JSX.Element => {
   return (
-    <div ref={ref} id="skillset" className="z-40">
+    <div ref={ref} id="skillset" className="z-40 mx-5 lg:mb-48">
       <SectionHeader title="Skillset" />
-      <div className="grid md:grid-cols-3 sm:grid-cols-none gap-4 my-9 mx-4">
+      <div className="flex flex-col gap-5 lg:flex-row lg:flex-nowrap lg:overflow-x-auto lg:py-5">
         {skillsets.map((skillset: ISkillset, index: number) => {
           return (
-            <div key={index} className="w-100">
+            <div key={index} className="lg:w-[400px] lg:flex-shrink-0">
               <SkillCard skill={skillset.skill} image={skillset.image} />
             </div>
           );
