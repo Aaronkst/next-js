@@ -89,11 +89,11 @@ const skillsets = [
   },
 ];
 
-const Skillset = forwardRef<HTMLDivElement>((props, ref): JSX.Element => {
+const Skillset = (): JSX.Element => {
   return (
-    <div ref={ref} id="skillset" className="z-40 mx-5 lg:mb-48">
+    <div id="skillset" className="bg-gray-100 pt-16 lg:pb-48">
       <SectionHeader title="Skillset" />
-      <div className="flex flex-col gap-5 lg:flex-row lg:flex-nowrap lg:overflow-x-auto lg:py-5">
+      <div className="mx-5 flex flex-col gap-5 lg:flex-row lg:flex-nowrap lg:overflow-x-auto lg:py-5">
         {skillsets.map((skillset: ISkillset, index: number) => {
           return (
             <div key={index} className="lg:w-[400px] lg:flex-shrink-0">
@@ -104,8 +104,6 @@ const Skillset = forwardRef<HTMLDivElement>((props, ref): JSX.Element => {
       </div>
     </div>
   );
-});
-
-Skillset.displayName = "Skillset";
+};
 
 export default Skillset;

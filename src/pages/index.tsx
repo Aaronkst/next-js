@@ -7,18 +7,17 @@ import Projects from "../views/Project";
 import Contact from "../views/Contact";
 
 const Home: NextPage = (): JSX.Element => {
-  const ref = useRef<HTMLDivElement>(null);
-
-  const scrollIntoView = () => {
-    ref.current && ref.current.scrollIntoView({ behavior: "smooth" });
-  };
-
   return (
-    <div id="root" className="text-sofia">
+    <div
+      id="root"
+      className="relative !overflow-auto z-[0] h-screen"
+      // style={{ backfaceVisibility: "hidden" }}
+    >
       <NavigationBar />
-      <Main scroll={scrollIntoView} />
-      <Skillset ref={ref} />
+      <Main />
+      <Skillset />
       <Projects />
+      <Contact />
     </div>
   );
 };

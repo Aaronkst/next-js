@@ -32,12 +32,7 @@ const projects = [
 const Projects = (): JSX.Element => {
   const projectList = projects.map((project: IProject, index: number) => {
     return (
-      <ScrollAnimation
-        key={index}
-        animateIn={index % 2 === 0 ? "fly-in-left" : "fly-in-right"}
-        animateOnce={true}
-        className="w-full"
-      >
+      <div key={index} className="w-full">
         <div
           className={
             index % 2 === 0
@@ -51,7 +46,8 @@ const Projects = (): JSX.Element => {
               src={project.image}
               alt="Image Description"
               layout="responsive"
-              className="rounded-t-lg md:rounded-lg"
+              className="rounded-t-lg md:rounded-lg hover:cursor-pointer"
+              onClick={() => window.open(project.href)}
               onContextMenu={(e) => {
                 e.preventDefault();
                 return false;
@@ -67,7 +63,9 @@ const Projects = (): JSX.Element => {
               }
             >
               <h2 className="text-xl font-bold mb-4">{project.name}</h2>
-              <p className="uppercase text-pink-600 font-bold mb-6 flex items-center">
+
+              <p className="text-gray-500 mb-6">{project.description}</p>
+              <p className="text-pink-600 text-base mb-6 flex items-center">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="h-6 w-6"
@@ -90,17 +88,19 @@ const Projects = (): JSX.Element => {
                   Visit Project &rarr;
                 </a>
               </p>
-              <p className="text-gray-500 mb-6">{project.description}</p>
             </div>
           </div>
         </div>
-      </ScrollAnimation>
+      </div>
     );
   });
 
   return (
-    <div id="projects" className="z-40 py-9 md:px-12 bg-gray-800">
-      <div className="lg:w-8/12 py-9 lg:-mt-48 mx-auto bg-white rounded-xl shadow-lg">
+    <div className="pt-9 md:pb-9 bg-gray-100 md:bg-gray-300 shadow-lg">
+      <div
+        id="projects"
+        className="lg:w-3/4 py-9 lg:-mt-48 mx-auto bg-white md:rounded-xl md:shadow-lg"
+      >
         <SectionHeader title="Projects" />
         <div className="flex flex-col pb-10 items-center lg:px-5">
           {projectList}

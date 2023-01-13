@@ -1,14 +1,11 @@
 /* This example requires Tailwind CSS v2.0+ */
 import { Disclosure } from "@headlessui/react";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
-import Image from "next/image";
-
-import imgCoding from "../images/coding.png";
 
 const navigation = [
-  { name: "Home", href: "#main", current: false },
-  { name: "Skillset", href: "#skillset", current: false },
-  { name: "Projects", href: "#projects", current: false },
+  { name: "Home", href: "main", current: false },
+  { name: "Skillset", href: "skillset", current: false },
+  { name: "Projects", href: "projects", current: false },
 ];
 
 function classNames(...classes: Array<string>) {
@@ -16,10 +13,17 @@ function classNames(...classes: Array<string>) {
 }
 
 const Navigation = (): JSX.Element => {
+  const navigate = (target: string) => {
+    console.log(target);
+    const section = document.getElementById(target);
+    console.log(section);
+    section?.scrollIntoView();
+  };
+
   return (
     <Disclosure
       as="nav"
-      className="bg-gray-800 w-full sticky top-0 z-50 md:absolute"
+      className="bg-gray-800 w-full sticky top-0 z-50 shadow"
     >
       {({ open }) => (
         <>
@@ -49,19 +53,17 @@ const Navigation = (): JSX.Element => {
                 <div className="hidden sm:block">
                   <div className="flex space-x-4">
                     {navigation.map((item) => (
-                      <a
+                      <button
                         key={item.name}
-                        href={item.href}
+                        onClick={() => navigate(item.href)}
                         className={classNames(
-                          item.current
-                            ? "bg-gray-900 text-white"
-                            : "text-gray-300 hover:bg-gray-700 hover:text-white",
+                          "text-gray-300 hover:bg-gray-700 hover:text-white",
                           "px-3 py-2 rounded-md text-sm font-medium"
                         )}
                         aria-current={item.current ? "page" : undefined}
                       >
                         {item.name}
-                      </a>
+                      </button>
                     ))}
                   </div>
                 </div>
@@ -124,12 +126,10 @@ const Navigation = (): JSX.Element => {
               {navigation.map((item) => (
                 <Disclosure.Button
                   key={item.name}
-                  as="a"
-                  href={item.href}
+                  as="button"
+                  onClick={() => navigate(item.href)}
                   className={classNames(
-                    item.current
-                      ? "bg-gray-900 text-white"
-                      : "text-gray-300 hover:bg-gray-700 hover:text-white",
+                    "text-gray-300 hover:bg-gray-700 hover:text-white",
                     "block px-3 py-2 rounded-md text-base font-medium"
                   )}
                   aria-current={item.current ? "page" : undefined}
