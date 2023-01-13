@@ -3,107 +3,106 @@
 @tailwind utilities;
 
 @layer base {
-  @import url('https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@300&display=swap');
+  @import url("https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@300&display=swap");
 
-html,
-body {
-  padding: 0;
-  margin: 0;
-  scroll-behavior: smooth;
-  font-family: 'Sofia Sans', sans-serif;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-.project-caption {
-  background: hsla(0, 0%, 100%, 0.55); 
-  backdrop-filter: blur(30px);
-}
-
-.fly-in-top {
-  animation: fly-in-top 0.5s;
-}
-
-.fly-in-bottom {
-  animation: fly-in-bottom 0.5s;
-}
-
-.fly-in-left {
-  animation: fly-in-left 0.5s;
-}
-
-.fly-in-right {
-  animation: fly-in-right 0.5s;
-}
-
-@keyframes fly-in-bottom {
-  0%   { 
-  transform: translateY(300%); 		
+  html,
+  body {
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    font-family: "Sofia Sans", sans-serif;
   }
-  100% { 
-  transform: translateY(0%); 
-  }
-}
 
-@keyframes fly-in-left {
-  0%   { 
-  transform: translateX(-300%); 		
+  a {
+    color: inherit;
+    text-decoration: none;
   }
-  100% { 
-  transform: translateX(0%); 
-  }
-}
 
-@keyframes fly-in-right {
-  0%   { 
-  transform: translateX(300%); 		
+  * {
+    box-sizing: border-box;
   }
-  100% { 
-  transform: translateX(0%); 
-  }
-}
 
-@keyframes fly-out-top {
-  0%   { 
-  transform: translateY(0%); 		
+  .project-caption {
+    background: hsla(0, 0%, 100%, 0.55);
+    backdrop-filter: blur(30px);
   }
-  100% { 
-  transform: translateY(-300%); 
-  }
-}
 
-@keyframes fly-out-bottom {
-  0%   { 
-  transform: translateY(0%); 		
+  .fly-in-top {
+    animation: fly-in-top 0.5s;
   }
-  100% { 
-  transform: translateY(300%); 
-  }
-}
 
-@keyframes fly-out-left {
-  0%   { 
-  transform: translateX(0%); 		
+  .fly-in-bottom {
+    animation: fly-in-bottom 0.5s;
   }
-  100% { 
-  transform: translateX(-300%); 
-  }
-}
 
-@keyframes fly-out-right {
-  0%   { 
-  transform: translateX(0%); 		
+  .fly-in-left {
+    animation: fly-in-left 0.5s;
   }
-  100% { 
-  transform: translateX(300%); 
-  }
-}
 
+  .fly-in-right {
+    animation: fly-in-right 0.5s;
+  }
+
+  @keyframes fly-in-bottom {
+    0% {
+      transform: translateY(300%);
+    }
+    100% {
+      transform: translateY(0%);
+    }
+  }
+
+  @keyframes fly-in-left {
+    0% {
+      transform: translateX(-300%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
+
+  @keyframes fly-in-right {
+    0% {
+      transform: translateX(300%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
+
+  @keyframes fly-out-top {
+    0% {
+      transform: translateY(0%);
+    }
+    100% {
+      transform: translateY(-300%);
+    }
+  }
+
+  @keyframes fly-out-bottom {
+    0% {
+      transform: translateY(0%);
+    }
+    100% {
+      transform: translateY(300%);
+    }
+  }
+
+  @keyframes fly-out-left {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-300%);
+    }
+  }
+
+  @keyframes fly-out-right {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(300%);
+    }
+  }
 }
